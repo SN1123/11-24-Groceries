@@ -1,17 +1,14 @@
-// class to store list of Grocery items 
 import java.util.*;
 // class to represent a grocery item
-
 public class GroceryList
 {
   ArrayList<GroceryItem>list;
-  
   public String toString ()
   {
     String s = "";
     for (int i = 0; i < list.size(); i++)
     {
-      s += list.get(i).toString() + "\n"; 
+      s += list.get(i).toString() + "\n";
     }
     return s;
   }
@@ -28,10 +25,9 @@ public class GroceryList
     double sum = 0.0;
     for (int j = 0; j<list.size(); j++)
     {
-     sum += list.get(j).getCost();
+      sum += list.get(j).getCost();
     }
     return sum;
   }
 }
-  
-  
+
