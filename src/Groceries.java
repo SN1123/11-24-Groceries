@@ -1,15 +1,20 @@
 // main program to run the GroceryList
-// main program to run the GroceryList
-
 public class GroceryMain
 {
   public static void Main (String[] args)
   {
-    GroceryList otherList = new GroceryList();
-    GroceryItem Item1 = new GroceryList("Oreos", 3, 2.50);
-    GroceryItem Item2 = new GroceryList("Goldish", 2, 1.75);
-    GroceryList Item3 = new GroceryList("Apple", 8, 0.23);
-    GroceryList Item4 = new GroceryList("Fruit Loops", 2, 4.32);
-    GroceryList Item5 = new GroceryList("PopTarts", 4, 3.67);
+    GroceryList list= new GroceryList();
+    GroceryItem Item1= new GroceryItem("Oreos", 3, 2.50);
+    GroceryItem Item2= new GroceryItem("Goldish", 2, 1.75);
+    GroceryItem Item3= new GroceryItem("Apple", 8, 0.23);
+    GroceryItem Item4= new GroceryItem("Fruit Loops", 2, 4.32);
+    GroceryItem Item5= new GroceryItem("PopTarts", 4, 3.67);
+    list.add(Item1);
+    list.add(Item2);
+    list.add(Item3);
+    list.add(Item4);
+    list.add(Item5);
+    System.out.println(list.toString());
+    System.out.print("Total: $" + list.getTotalCost());
   }
 }
